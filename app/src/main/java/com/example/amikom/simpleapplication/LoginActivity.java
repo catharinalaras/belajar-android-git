@@ -36,6 +36,13 @@ public class LoginActivity extends AppCompatActivity {
 
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
+        Bundle kirim = new Bundle();
+
+        kirim.putString("nama", n);
+        intent.putExtras(kirim);
+        startActivity(intent);
+        finish();
+
     }
 }
 
